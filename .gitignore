@@ -1,0 +1,6 @@
+# the template assumes HTML will be generated from Markdown
+*.html
+# using pre-contents.lc.yaml instead
+contents.lc.yaml
+# for Nix users
+.direnv

@@ -1,0 +1,18 @@
+# this file can be used to *generate* a contents.lc.yaml file
+# current recommended practice is to set environment variables and use envsubst -i pre-contents.lc.yaml > contents.lc.yaml
+# for this reason, .gitignore excludes contents.lc.yaml
+#
+# the YAML schema file will be generated when the cluster is loaded into LBLP
+# yaml-language-server: $schema=./cluster_schema.json
+nodes:
+  - id: intro
+    title: "Intro"
+all_type_edges: []
+any_type_edges: []
+roots:
+  - intro
+post_node_node_plugins:
+  - path: "$LBLP_PLUGINS_DIR/lblp-assignments.wasm"
+    require_solutions: True
+post_node_cluster_plugins:
+  - path: "$LBLP_PLUGINS_DIR/lblp-markdown-rendering.wasm"

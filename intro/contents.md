@@ -1,0 +1,3 @@
+- explain what the project is about
+- explain roughly which concepts will be most important
+- give a demonstration of the intended outcome, e.g. screen recording
