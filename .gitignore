@@ -4,3 +4,5 @@
 contents.lc.yaml
 # for Nix users
 .direnv
+# this is generated
+cluster_schema.json
